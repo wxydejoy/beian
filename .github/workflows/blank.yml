@@ -1,0 +1,23 @@
+name: Daily Website Access
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  visit-websites:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Access bc.undf.top
+      run: |
+        curl -X GET https://bc.undf.top
+      # 如果需要更多控制或日志记录，可以使用其他HTTP客户端工具或添加更多命令。
+
+    - name: Access bc.wxydejoy.top
+      run: |
+        curl -X GET https://bc.wxydejoy.top
+      # 如果需要更多控制或日志记录，可以使用其他HTTP客户端工具或添加更多命令。
