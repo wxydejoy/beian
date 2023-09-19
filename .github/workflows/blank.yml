@@ -14,10 +14,10 @@ jobs:
 
     - name: Access bc.undf.top
       run: |
-        curl -X GET https://bc.undf.top
+        curl -X GET http://bc.undf.top
       # 如果需要更多控制或日志记录，可以使用其他HTTP客户端工具或添加更多命令。
 
     - name: Access bc.wxydejoy.top
       run: |
-        curl -X GET https://bc.wxydejoy.top
+        curl -X GET http://bc.wxydejoy.top
       # 如果需要更多控制或日志记录，可以使用其他HTTP客户端工具或添加更多命令。
