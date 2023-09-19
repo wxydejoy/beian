@@ -3,7 +3,7 @@ name: Daily Website Access
 on:
   schedule:
     - cron: "0 0 * * *"
-
+  workflow_dispatch: 
 jobs:
   visit-websites:
     runs-on: ubuntu-latest
